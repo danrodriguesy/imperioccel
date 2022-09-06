@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/* header */
+#header {
+    background: black;
+    min-height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+#header #logo {
+    margin: 15px;
+}
+#header #menu {
+    display: flex;
+    align-items: center;
+}
+#header #menu ul li {
+    display: inline-flex;
+    margin: 0 20px;
+}
+#header #menu ul li a{
+    color: #FFF;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+/* main */
+#main {
+    background: linear-gradient(black, white);
+    min-height: 200px;
+    margin: -1px 0;
+    display: flex;
+    padding: 90px;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+#main h3, #main p {
+    color: #FDFDFD;
+}
+#main p {
+    max-width: 500px;
+}
+#main #right #mobile {
+    width: 100%;
+}
+
+/* services */
+.row#header, .row#services {
+    margin-bottom: 60px;
+}
+#services {
+    min-height: 400px;
+    text-align: center;
+}
+#services .row {
+    margin: 0;
+}
+#services #content-services {
+    display: flex;
+    padding: 10px 10px;
+}
+#services #content-services .card {
+    width: 25%;
+    margin: 1rem auto;
+    border: 2px solid #CCC;
+    border-radius: 10px;
+    padding: 34px;
+}
+#services #content-services .card i {
+    font-size: 60px;
+}
+#services #content-services .card-icon {
+    color: green;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+#services #content-services .card-title {
+    color: #333;
+    font-size: 15px;
+    margin: 1rem 0;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+/* contact */
+#contact {
+    display: flex;
+    text-align: center;
+    flex-direction:column;
+    padding: 0;
+    font-size: 20pt;
+}
+#content-contact {
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);
+    min-height: 400px;
+    color: #000;
+    margin: 2rem 0;
+    padding: 60px;
+}
+
+/* footer */
+#footer {
+    background: black;
+    min-height: 60px;
+    margin: -2rem auto;
+    color: #333;
+    text-align: center;
+}
+
+/* icon whatsapp */
+#whatsapp-icon {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:30px;
+    right:40px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index:1000;
+}
+/* media query */
+
+/* tablet */
+@media (min-width: 600px) {
+    /* main */
+    #main {
+        padding: 60px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #main #right #mobile {
+        width: 100%;
+    }
+}
+
+/* mobile */
+@media only screen and (max-width: 600px) {
+    #header {
+        display: block;
+        justify-content: center;
+    }
+    #header #square-brand {
+        display: flex;
+        justify-content: center;
+    }
+    #header #menu {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    #header #menu ul li {
+        justify-content: center;
+        font-size: 10px;
+        margin: 0 .5rem;
+    }
+    #header #menu ul li a {
+        font-size: 10px;
+    }
+
+    /* main */
+    #main {
+        display: block;
+        text-align: center;
+        font-size: 12px;
+        padding: 0px;
+    }
+    #main #left {
+        margin: 4rem 0;
+    }
+
+    /* services */
+    #services #content-services {
+        display: block;
+        padding: 0;
+    }
+    #services #content-services {
+        display: block;
+        width: 100%;
+    }
+    #services #content-services .card {
+        width: 80%;
+        margin: 2rem auto;
+    }
+}
