@@ -51,6 +51,11 @@
 #main #right #mobile {
     width: 100%;
 }
+#main #right img {
+    box-shadow: 10px 10px 49px -1px rgba(255,255,255,0.34);
+    border-radius: 7px;
+    border: 1px solid #ccc;    
+}
 
 /* services */
 .row#header, .row#services {
@@ -197,6 +202,11 @@
     }
     #main #left {
         margin: 4rem 0;
+    }
+
+    #main #right #mobile {
+        width: 60%;
+        margin-bottom: 30px;
     }
 
     /* services */
